@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<meta name="author" content="Jonas Martin">
+
+		<title>Let's Connect!</title>
+
+		<!--CSS Style sheet linked to style the html documents-->
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+		<!--This is the script to link the kit from font awesome and make the instagram icon in the footer work-->
+
+		<script src="https://kit.fontawesome.com/dc1abb3040.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1 class="maintitle">Let's Connect!</h1>
+
+				<!-- Navigation Bar -->
+			<!-- This is the navigation bar across all the pages and contains links to the other pages of the website. Mainly, I have four main pages in my project, with 5 sub pages attached to the home page and they are as follows:
+				(1) “index.html”: my home page, launch page for the website and links out to the 5 destination pages:
+					(A) Colombia: A page summarizing why Colombia is a wonderful destination while highlighting key information.
+					(B) Germany: A page summarizing why Germany is a wonderful destination while highlighting key information.
+					(C) Ghana: A page summarizing why Ghana is a wonderful destination while highlighting key information.
+					(D) Japan: A page summarizing why Japan is a wonderful destination while highlighting key information.
+					(E) Thailand: A page summarizing why Thailand is a wonderful destination while highlighting key information.
+				(2) wandermission.html”: A mission/about us statement that describes the objective and purpose of this site.
+				(3) “recommended.html”: Recommended categories for flights, hotels, and rental car services that I have had good experiences with and can recommend.
+				(4) contactus.html”: A page where people can share their experiences or submit a question that may not have been answered on the website. As of now it has no place to go so I included the zyBooks link to hold the information submitted just for practice untilwe learn more.
+				***Unless you are on the Destination Pages all 4 main pages will never be on the nav bar at once. -->
+
+			<nav>
+				<ul class="nav-links">
+            		<li><a href="index.html" target="_self">Home</a></li>
+            		<li><a href="wandermission.html" target="_self">Wander With A Mission</a></li>
+            		<li><a href="recommended.html" target="_self">Navigator's Choice</a></li>
+            		
+            	</ul>
+            </nav>
+
+		</header>
+
+		<!--This area will be dedicated to the form submission and I am using the zyBooks link to let the POST information have somewhere to go and be displayed.-->
+
+		<main>
+
+			<h2>Want to share or have a question?</h2>
+
+			<form method="POST" action="https://wp.zybooks.com/form-viewer.php" target="_blank">
+				
+				<p>
+
+				<label for="firstname">First Name:</label>
+				<input type="text" name="firstname" id="firstname" required placeholder="John">
+
+				</p>
+
+				<p>
+
+				<label for="lastname">Last Name:</label>
+				<input type="text" name="lastname" id="lastname" required placeholder="Doe">
+
+				</p>
+
+				<p>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required placeholder="johndoe@gmail.com">
+
+				</p>
+
+				<p>
+
+				<label for="messagebox">Message:</label>
+				<textarea name="messagebox" id="messagebox" required rows="6" placeholder="Share your experience or ask your questions here!"></textarea>
+
+
+				<!--This div was created to help center the submit input on the form with CSS-->
+
+				<div class="submitbutton">
+
+				<input type="submit" value="Submit">
+
+				</div>
+
+
+			</form>
+
+
+		</main>
+
+		<footer>
+
+			<!--This is the instagram icon I got from fontawesome the script to make it work is located in the head. I also have included a Brand Name with copyright logo and my name as the author. My validation links can be seen here as well.-->
+			
+			<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" id="instagram"></i></a>
+
+			<p> Wander in Color &copy; Jonas Martin</p>
+
+			<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> <br>
+			
+			<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
+
+		</footer>
+
+	</body>
+
+</html>
