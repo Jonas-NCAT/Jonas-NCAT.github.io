@@ -16,8 +16,7 @@
 
 		<script src="https://kit.fontawesome.com/dc1abb3040.js" crossorigin="anonymous"></script>
 
-			<!-- Include jQuery for AJAX -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	</head>
 
 	<body>
@@ -116,39 +115,7 @@
 
 			</p>
 
-			<h3>Current Weather in Tokyo</h3>
-        <div id="weather-widget">
-            <p id="weather-description">Loading...</p>
-            <p id="weather-temperature"></p>
-            <p id="weather-humidity"></p>
-        </div>
-
-        <script>
-            // Function to fetch weather data
-            $(document).ready(function () {
-                const apiKey = a1cabc272d1b259442b247df2a49742c; // Replace with your OpenWeatherMap API key
-                const city = 'Tokyo';
-                const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-                $.ajax({
-                    url: apiUrl,
-                    method: 'GET',
-                    success: function (data) {
-                        const weatherDescription = data.weather[0].description;
-                        const temperature = data.main.temp;
-                        const humidity = data.main.humidity;
-
-                        // Update the weather widget with the fetched data
-                        $('#weather-description').text(`Weather: ${weatherDescription}`);
-                        $('#weather-temperature').text(`Temperature: ${temperature}°C`);
-                        $('#weather-humidity').text(`Humidity: ${humidity}%`);
-                    },
-                    error: function () {
-                        $('#weather-widget').html('<p>Failed to retrieve weather data.</p>');
-                    }
-                });
-            });
-        </script>
+		
 
 		</main>
 
